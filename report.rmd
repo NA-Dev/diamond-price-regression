@@ -305,20 +305,20 @@ Predicted mean price for 9.09 carat: $205,836.8
 95% confidence interval: (205083.3, 206590.3)
 95% prediction interval: (176223, 235450.7)
 
-The following confidence and prediction intervals are made using the same carat scenarios (1.1 and 9.09), but using the transformed linear regression equation.
-```{r, echo=FALSE}
-newdata<-data.frame(carat=1.1)
-int.c <- predict.lm(result.car2,newdata,level=0.95, interval="confidence")
-int.p<- predict.lm(result.car2,newdata,level=0.95, interval="prediction")
-exp(int.c)
-exp(int.p)
+<!-- The following confidence and prediction intervals are made using the same carat scenarios (1.1 and 9.09), but using the transformed linear regression equation. -->
+<!-- ```{r, echo=TRUE, results='hide'} -->
+<!-- newdata<-data.frame(carat=1.1) -->
+<!-- int.c <- predict.lm(result.car2,newdata,level=0.95, interval="confidence") -->
+<!-- int.p<- predict.lm(result.car2,newdata,level=0.95, interval="prediction") -->
+<!-- exp(int.c) -->
+<!-- exp(int.p) -->
 
-newdata<-data.frame(carat=9.09)
-int.c <- predict.lm(result.car2,newdata,level=0.95, interval="confidence")
-int.p <- predict.lm(result.car2,newdata,level=0.95, interval="prediction")
-exp(int.c)
-exp(int.p)
-```
+<!-- newdata<-data.frame(carat=9.09) -->
+<!-- int.c <- predict.lm(result.car2,newdata,level=0.95, interval="confidence") -->
+<!-- int.p <- predict.lm(result.car2,newdata,level=0.95, interval="prediction") -->
+<!-- exp(int.c) -->
+<!-- exp(int.p) -->
+<!-- ``` -->
 
 
 
